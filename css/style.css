@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*Contenedores principales*/
+
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+.subcontainer {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-areas: 
+    'nav nav'
+    'port port'
+    'form alusiv';
+    grid-template-rows: auto auto;
+}
+
+nav {
+    width: 100% ;
+    height: 80px;
+    background-color: rgb(45, 28, 83);
+    grid-area: nav;
+}
+
+.academy {
+    color: white;
+    margin-left: 20px;
+    font-size: 40px;
+    margin-top: 10px;
+}
+
+/*HEADER */
+
+header {
+    width: 100%;
+    height: 800px;
+    background-image: url(./assets/laptop-gf4308c508_1920.jpg);
+    grid-area: port;
+    background-attachment: fixed;
+
+}
+
+.shadow1 {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, 0.6);
+    display: flex; /*La imagen se mueve, pero no el contenido*/
+    flex-direction: column;
+
+}
+
+/*Titulo*/
+
+h1 {
+    margin: 20px;
+    margin-top: 15%;
+    margin-bottom: 10px;
+    font-size: 50px;
+    color: white;
+    text-shadow: 2px 2px 1px royalblue;
+    text-align: center;
+
+}
+
+.sublogo {
+    margin: 5%;
+    margin-left: 40%;
+    margin-top: 10px;
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 1px royalblue;
+
+}
+
+/*formulario*/
+
+.form {
+    grid-area: form;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    background-color: rgb(41, 120, 239);
+}
+
+form {
+    width: 100%;
+
+}
+
+.titleForm {
+    width: 100%;
+    height: 50px;
+    font-size: 50px;
+    padding: 20px;
+    color: white;
+}
+
+.name {
+
+    margin: 20px;
+    margin-left: 10px;
+    width: 40%;
+    height: 10%;
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+
+}
+
+.lastName {
+
+    margin: 20px;
+    margin-left: 10px;
+    width: 40%;
+    height: 10%;
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+
+}
+
+.email {
+
+    margin: 20px;
+    margin-left: 10px;
+    width: 85%;
+    height: 10%;
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+
+}
+
+.clave {
+    margin: 20px;
+    margin-left: 10px;
+    width: 55%;
+    height: 10%;
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 10px;
+    border: none; 
+}
+
+.finish {
+    margin-left: 10px;
+    width: 25%;
+    height: 12%;
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 10px;
+    border: none; 
+    background-color: rgb(35, 35, 95);
+    color: white;
+}
+
+.finish:hover {
+    cursor: pointer;
+    background-color: blue;
+}
+    
+.banner {
+     grid-area: alusiv;
+    width: 100%;
+    height: 100%;
+    background-image: url(./assets/woman-g70d76a07e_1280.jpg);
+    background-position: center;
+    color: white;
+}
+
+.reference {
+    margin-top: 20%;
+    margin-left: 5%;
+    font-size: 30px;
+}
